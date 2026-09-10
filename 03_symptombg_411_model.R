@@ -2,8 +2,6 @@
 # 03_symptombg_411_model.R  — EN + RF on symptoms+background (411), for feature selection
 # merged: en_symptbg.R + rf_symptbg.R
 # Run with working directory = LC_Data.
-# NOTE: faithful merge of the scripts named above; only data paths repointed
-# to raw_data/ and metadata/. Preserved originals are in code/archive/.
 # ============================================================
 
 # =============================================================================

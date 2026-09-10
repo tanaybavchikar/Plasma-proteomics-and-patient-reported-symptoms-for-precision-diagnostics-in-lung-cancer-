@@ -2,10 +2,6 @@
 # 04_LCP2_proteomics_model.R  — EN + RF on LCP2 proteins, for feature selection
 # merged: en_LCP2_proteomics.R + rf_LCP2_proteomics.R + analyse_topprot_sex_vs_cancer.R
 # Run with working directory = LC_Data.
-# NOTE: faithful merge of the scripts named above; only data paths repointed
-# to raw_data/ and metadata/. Preserved originals are in code/archive/.
-# ============================================================
-
 # =============================================================================
 # en_LCP2_proteomics.R
 # -----------------------------------------------------------------------------
@@ -152,7 +148,7 @@ coef_df <- tibble(term = rownames(co), coefficient = -as.numeric(co)) %>%
          direction  = ifelse(coefficient > 0, "higher cancer risk", "lower cancer risk")) %>%
   arrange(desc(abs(coefficient)))
 
-# Attach human-readable Olink Assay names (prot_name_lookup_LCP2.csv)
+# Attach Olink Assay names (prot_name_lookup_LCP2.csv)
 prot_lookup <- read.csv("processed_data/prot_name_lookup_LCP2.csv")
 coef_df <- coef_df %>%
   left_join(prot_lookup, by = c("term" = "Variable")) %>%

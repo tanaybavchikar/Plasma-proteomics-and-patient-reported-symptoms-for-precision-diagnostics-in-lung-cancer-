@@ -2,18 +2,13 @@
 # 00_univariate_table1.R  — Task 1: univariate description ('Table 1')
 # from task1_univariate/table1_univariate.R
 # Run with working directory = LC_Data.
-# NOTE: faithful merge of the scripts named above; only data paths repointed
-# to raw_data/ and metadata/. Preserved originals are in code/archive/.
 # ============================================================
 
 # =============================================================================
 # table1_univariate.R
 # -----------------------------------------------------------------------------
-# Task 1 (Noora): the descriptive "Table 1" + univariate case-vs-control tests
-# for the 411-patient TRAINING cohort. NO machine learning here -- this is the
-# per-variable description every clinical/proteomics paper leads with, and the
-# sanity baseline for which variables individually separate cancer from control.
-#
+# Task 1: the descriptive "Table 1" + univariate case-vs-control tests
+# for the 411-patient TRAINING cohort. NO machine learning here.
 # For every variable it reports frequency overall / in cases / in controls, and
 # tests case-vs-control:
 #   - binary variable (symptom or background yes/no): 2x2 table, ODDS RATIO

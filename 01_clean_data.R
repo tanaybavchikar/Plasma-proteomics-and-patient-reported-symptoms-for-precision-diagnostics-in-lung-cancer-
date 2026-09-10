@@ -2,8 +2,6 @@
 # 01_clean_data.R  — clean symptom, LCP1 (MS+Olink), LCP2 (Olink) data
 # merged: clean_symptom_data.R + clean_data_LCP1.R + clean_LCP2_olink.R
 # Run with working directory = LC_Data.
-# NOTE: faithful merge of the scripts named above; only data paths repointed
-# to raw_data/ and metadata/. Preserved originals are in code/archive/.
 # ============================================================
 
 # =============================================================================
